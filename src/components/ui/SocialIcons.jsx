@@ -8,23 +8,6 @@ export function InstagramIcon(props) {
   )
 }
 
-export function LinkedinIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
-      <path d="M6.94 8.5H3.56V21h3.38V8.5ZM5.25 3A1.97 1.97 0 1 0 5.25 6.94 1.97 1.97 0 0 0 5.25 3ZM21 13.9c0-3.51-1.87-5.15-4.37-5.15-2.02 0-2.92 1.11-3.42 1.89V8.5H9.83V21h3.38v-6.62c0-1.75.33-3.44 2.5-3.44 2.14 0 2.17 2 2.17 3.55V21H21v-7.1Z" />
-    </svg>
-  )
-}
-
-export function YoutubeIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
-      <rect x="2.5" y="5" width="19" height="14" rx="4" stroke="currentColor" strokeWidth="1.7" />
-      <path d="M10.3 9.1v5.8l5-2.9-5-2.9Z" fill="currentColor" />
-    </svg>
-  )
-}
-
 export function WhatsappIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>

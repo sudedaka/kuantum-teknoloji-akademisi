@@ -1,15 +1,9 @@
 import {
-  Blocks,
-  Bot,
-  BrainCircuit,
   Calculator,
-  CodeXml,
   Cog,
   Cpu,
   FlaskConical,
   Palette,
-  Rocket,
-  Sparkles,
 } from 'lucide-react'
 
 export const navItems = [
@@ -19,15 +13,6 @@ export const navItems = [
   { id: 'robotik', label: 'Robotik & Kodlama' },
   { id: 'projeler', label: 'Projeler' },
   { id: 'iletisim', label: 'İletişim' },
-]
-
-export const pillars = [
-  { label: 'Yapay Zeka', icon: BrainCircuit },
-  { label: 'Yazılım', icon: CodeXml },
-  { label: 'Robotik', icon: Bot },
-  { label: 'Kodlama', icon: Blocks },
-  { label: 'Tasarım', icon: Sparkles },
-  { label: 'Girişimcilik', icon: Rocket },
 ]
 
 export const programs = [
@@ -203,33 +188,63 @@ export const galleryItems = [
     alt: 'Atölye masasında tablet ve LEGO robotik modeli',
     position: '50% 36%',
   },
+  {
+    src: '/images/projeler-gorseller/7.jpg',
+    alt: 'Masasında LEGO robotuyla odaklanan öğrenci',
+    position: '50% 30%',
+  },
+  {
+    src: '/images/projeler-gorseller/8.jpg',
+    alt: 'Tabletinde blok tabanlı kodlama yapan öğrenci',
+    position: '50% 35%',
+  },
+  {
+    src: '/images/projeler-gorseller/9.jpg',
+    alt: 'Devre tahtası ve dizüstü bilgisayarla çalışan genç öğrenci',
+    position: '45% 30%',
+  },
+  {
+    src: '/images/projeler-gorseller/6.jpg',
+    alt: 'Pencereli atölyede dizüstü bilgisayarda çalışan öğrenci',
+    position: '62% 55%',
+  },
+  {
+    src: '/images/projeler-gorseller/10.jpg',
+    alt: 'LEGO robot modelini birleştiren öğrenci',
+    position: '62% 45%',
+  },
+  {
+    src: '/images/projeler-gorseller/11.jpg',
+    alt: 'Tablet ekranında birlikte çalışan öğrenci grubu',
+    position: '50% 45%',
+  },
 ]
 
 export const faqs = [
   {
-    question: 'Kodlama bilmeyen çocuklar başlayabilir mi?',
+    question: 'Kodlamayı Hiç Bilmeyen Çocuklar Başlayabilir mi?',
     answer:
-      'Kesinlikle. Tüm programlar başlangıç seviyesinden başlar. Çocuğun yaşına ve deneyimine göre doğru gruptan başlar, kendi hızında ilerler.',
+      'Kesinlikle! Programlarımız, hiçbir ön bilgi gerektirmeden çocukların yaşına ve seviyesine uygun olarak başlangıç düzeyinden itibaren planlanır. Çocuklar algoritmik düşünme, problem çözme ve yaratıcılık becerilerini geliştirirken kodlama ve robotik dünyasını adım adım keşfeder.',
   },
   {
-    question: 'Sınıf mevcudu kaç kişi?',
+    question: 'Sınıf Mevcudu Kaç Kişidir?',
     answer:
-      'Gruplar en fazla 8 öğrenciden oluşur. Bu sayede her öğrenciye birebir geri bildirim verebiliyor, projeleri yakından takip edebiliyoruz.',
+      'Sınıflarımız maksimum 4 öğrenciden oluşmaktadır. Her öğrencimizle birebir ilgilenebilmek, ihtiyaçlarına uygun ilerlemek ve derslerin verimliliğini en üst seviyede tutmak amacıyla sınıf kontenjanlarımız sınırlı tutulmaktadır.',
   },
   {
-    question: 'Dersler hangi gün ve saatlerde yapılıyor?',
+    question: 'Dersler Hangi Gün ve Saatlerde Yapılır?',
     answer:
-      'Atölyeler hafta sonu cumartesi ve pazar günleri yapılır. Yaş grubuna göre 60, 90 veya 120 dakikalık seanslar bulunur. Güncel saatler için iletişim formundan bize ulaşabilirsiniz.',
+      'Derslerimiz hafta içi ve hafta sonu gerçekleştirilmektedir. Öğrencilerimizin yaş ve seviyelerine uygun programlar oluşturularak ortak gün ve saat belirlenir. Her dersimiz 1 saat 20 dakika sürmektedir.',
   },
   {
-    question: 'Bilgisayar veya robot seti getirmemiz gerekiyor mu?',
+    question: 'Bilgisayar veya Robot Seti Getirmemiz Gerekiyor mu?',
     answer:
-      'Hayır. Atölyelerde kullanılan bilgisayarlar, robot setleri ve tüm ekipmanlar tarafımızdan sağlanır. Öğrenciler yalnızca meraklarını getirir.',
+      'Hayır, öğrencilerimizin herhangi bir materyal getirmesine gerek yoktur. Atölyemizde dersler için gerekli tüm robotik setler, bilgisayarlar ve tabletler hazır bulunmaktadır. Öğrencilerimizin derse katılmaları yeterlidir!',
   },
   {
-    question: 'Deneme dersi veya atölye ziyareti var mı?',
+    question: 'Deneme Dersi veya Atölye Ziyareti Yapabilir miyiz?',
     answer:
-      'Evet. Kayıt öncesinde ücretsiz tanışma dersi planlıyoruz. Böylece çocuğunuzun grubu ve eğitmeniyle uyumunu birlikte görebiliriz.',
+      'Elbette! Öğrencilerimizi yakından tanımak ve atölye ortamımızı keşfetmelerini sağlamak amacıyla deneme dersleri ve atölye ziyaretleri gerçekleştiriyoruz. Böylece öğrencilerimiz programlarımızı deneyimleyerek sürece keyifle başlayabilirler.',
   },
   {
     question: 'Yaş grubu nasıl belirleniyor?',
@@ -239,7 +254,7 @@ export const faqs = [
 ]
 
 export const contactInfo = {
-  phone: '+90 555 000 00 00',
+  phone: '+90 (530) 862 41 08',
   email: 'kuantumteknolojiakademisi@gmail.com',
-  address: 'Güzelbahçe Yelki, İzmir',
+  addressLines: ['Yelki, İnönü Cd. No:2/B', '35310 Güzelbahçe / İzmir'],
 }

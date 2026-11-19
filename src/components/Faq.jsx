@@ -5,7 +5,7 @@ import SectionHeading from './ui/SectionHeading'
 
 export default function Faq() {
   return (
-    <section className="section-pad relative overflow-hidden">
+    <section id="sss" className="section-pad relative overflow-hidden">
       <div className="pointer-events-none absolute -left-32 top-1/3 h-72 w-72 rounded-full bg-fuchsia-600/[0.06] blur-[110px]" />
 
       <div className="container-x relative grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">

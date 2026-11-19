@@ -11,30 +11,7 @@
   --color-plasma: #22d3ee;
   --color-aurora: #e879f9;
 
-  --animate-marquee: marquee 38s linear infinite;
-  --animate-float: float 9s ease-in-out infinite;
-  --animate-float-slow: float 14s ease-in-out infinite;
   --animate-pulse-soft: pulse-soft 5s ease-in-out infinite;
-  --animate-spin-slow: spin 28s linear infinite;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-14px);
-  }
 }
 
 @keyframes pulse-soft {
@@ -120,14 +97,6 @@
     @apply max-w-2xl text-[15px] leading-7 text-slate-400 sm:text-base;
   }
 
-  .glass {
-    @apply border border-white/[0.08] bg-white/[0.035] backdrop-blur-xl;
-  }
-
-  .glass-strong {
-    @apply border border-white/10 bg-white/[0.06] backdrop-blur-2xl;
-  }
-
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300;
     background-image: linear-gradient(110deg, #7c3aed 0%, #a855f7 45%, #06b6d4 100%);
@@ -141,20 +110,8 @@
     box-shadow: 0 18px 50px -14px rgba(34, 211, 238, 0.55);
   }
 
-  .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300 hover:border-white/30 hover:bg-white/[0.07];
-  }
-
   .chip {
     @apply inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[11px] font-medium text-slate-300;
-  }
-
-  .field {
-    @apply w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder:text-slate-500 transition-colors duration-200 focus:border-violet-400/50 focus:bg-white/[0.05] focus:outline-none;
-  }
-
-  .field-label {
-    @apply mb-1.5 block text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-400;
   }
 
   .nav-link {
@@ -174,11 +131,6 @@
     linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
   background-size: 64px 64px;
-}
-
-.mask-fade-x {
-  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
 }
 
 .reveal {

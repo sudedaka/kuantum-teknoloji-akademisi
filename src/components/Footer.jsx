@@ -91,7 +91,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <a
-                  href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
+                  href={`tel:${contactInfo.phone.replace(/[^\d+]/g, '')}`}
                   className="flex items-start gap-2.5 text-[12px] text-slate-500 transition-colors hover:text-violet-300"
                 >
                   <Phone className="mt-0.5 h-3.5 w-3.5 shrink-0 text-violet-400/70" />
@@ -109,7 +109,13 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2.5 text-[12px] text-slate-500">
                 <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0 text-violet-400/70" />
-                {contactInfo.address}
+                <span>
+                  {contactInfo.addressLines.map((line) => (
+                    <span key={line} className="block">
+                      {line}
+                    </span>
+                  ))}
+                </span>
               </li>
             </ul>
           </div>

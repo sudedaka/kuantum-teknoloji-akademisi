@@ -1,16 +1,36 @@
-# React + Vite
+# Kuantum Teknoloji Akademisi
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Kuantum Teknoloji Akademisi'nin tek sayfalık tanıtım sitesi. React + Vite + Tailwind CSS ile geliştirilmiştir; koyu tema üzerine kurulu, animasyonlu bölümlerden oluşur.
 
-Currently, two official plugins are available:
+## Çalıştırma
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev      # geliştirme sunucusu (varsayılan: http://localhost:5173)
+npm run build    # üretim derlemesi (dist/)
+npm run preview  # derlenmiş sürümü önizle
+npm run lint     # oxlint ile kod kontrolü
+```
 
-## React Compiler
+## Proje yapısı
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+public/
+  images/
+    programlarimiz-gorseller/   # program kartı görselleri
+    projeler-gorseller/         # projeler bölümü fotoğrafları
+    kuantum.mp4                 # tanıtım videosu (tıklayınca oynar)
+    kuantum-poster.jpg          # videonun kapak karesi
+    ...                         # logo, hero arka planı, bölüm görselleri
+src/
+  components/                   # sayfa bölümleri (Hero, Programs, Steam, ...)
+    ui/                         # ortak küçük bileşenler (Brand, Reveal, ...)
+  data/site.js                  # tüm metinler, programlar, SSS, iletişim bilgileri
+  index.css                     # tema değişkenleri ve ortak sınıflar
+```
 
-## Expanding the Oxlint configuration
+## İçerik güncelleme
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- **Metinler, programlar, SSS, iletişim bilgileri:** `src/data/site.js`
+- **Görseller:** `public/images/` altındaki ilgili klasör
+- **Renkler, fontlar, ortak stiller:** `src/index.css` içindeki `@theme` bloğu

@@ -81,33 +81,37 @@ export default function Gallery() {
             </figure>
           </Reveal>
 
-          {galleryItems.map((item, index) => (
-            <Reveal
-              key={item.src}
-              delay={index * 60}
-              className={`${index === galleryItems.length - 1 ? 'col-span-2' : ''} h-full`}
-            >
-              <figure
-                className={`group relative h-full w-full overflow-hidden rounded-2xl border border-white/[0.08] bg-night ${
-                  index === galleryItems.length - 1 ? 'aspect-[3/2] lg:aspect-auto' : 'aspect-[3/4] lg:aspect-auto'
-                }`}
+          {galleryItems.map((item, index) => {
+            const wide = index >= galleryItems.length - 3
+
+            return (
+              <Reveal
+                key={item.src}
+                delay={index * 60}
+                className={`${wide ? 'col-span-2' : ''} h-full`}
               >
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  loading="lazy"
-                  className="h-full w-full object-cover brightness-[0.92] transition-[filter,transform] duration-700 ease-out group-hover:scale-[1.03] group-hover:brightness-100"
-                  style={{ objectPosition: item.position }}
-                />
+                <figure
+                  className={`group relative h-full w-full overflow-hidden rounded-2xl border border-white/[0.08] bg-night ${
+                    wide ? 'aspect-[3/2] lg:aspect-auto' : 'aspect-[3/4] lg:aspect-auto'
+                  }`}
+                >
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    loading="lazy"
+                    className="h-full w-full object-cover brightness-[0.92] transition-[filter,transform] duration-700 ease-out group-hover:scale-[1.03] group-hover:brightness-100"
+                    style={{ objectPosition: item.position }}
+                  />
 
-                <span className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 transition-colors duration-300 group-hover:ring-violet-300/30" />
+                  <span className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 transition-colors duration-300 group-hover:ring-violet-300/30" />
 
-                <span className="pointer-events-none absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-black/35 text-white opacity-0 backdrop-blur-md transition-opacity duration-300 group-hover:opacity-100">
-                  <ArrowUpRight className="h-3.5 w-3.5" />
-                </span>
-              </figure>
-            </Reveal>
-          ))}
+                  <span className="pointer-events-none absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-black/35 text-white opacity-0 backdrop-blur-md transition-opacity duration-300 group-hover:opacity-100">
+                    <ArrowUpRight className="h-3.5 w-3.5" />
+                  </span>
+                </figure>
+              </Reveal>
+            )
+          })}
         </div>
       </div>
     </section>

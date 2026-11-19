@@ -9,7 +9,7 @@ export default function Contact() {
     {
       label: 'Telefon',
       Icon: Phone,
-      href: `tel:${contactInfo.phone.replace(/\s/g, '')}`,
+      href: `tel:${contactInfo.phone.replace(/[^\d+]/g, '')}`,
       lines: [contactInfo.phone],
     },
     {
@@ -21,7 +21,7 @@ export default function Contact() {
     {
       label: 'Adres',
       Icon: MapPin,
-      lines: [contactInfo.address],
+      lines: contactInfo.addressLines,
     },
   ]
 
