@@ -29,7 +29,7 @@ export default function WhyCoding() {
           <Reveal delay={120}>
             <div>
               <h2 className="font-display text-3xl font-semibold leading-[1.15] tracking-[-0.02em] text-white sm:text-4xl lg:text-[2.75rem]">
-                Kodlama ve Robotik Neden Önemli?
+                Robotik ve Kodlama Neden Önemli?
               </h2>
 
               <p className="mt-6 text-[15px] leading-7 text-slate-300 sm:text-base sm:leading-8">
